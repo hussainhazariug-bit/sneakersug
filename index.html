@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sneakers | Kampala</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&display=swap">
+<style>
+:root{--bg:#EEF1FF;--ink:#10163A;--muted:#4A5280;--card:#FFFFFF;--blue:#1F3BFF;--sun:#FFD21F;--line:#CBD2F5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E1330;--ink:#F2F4FF;--muted:#A9B2E6;--card:#171E48;--blue:#6D84FF;--line:#2C3670}}
+:root[data-theme="dark"]{--bg:#0E1330;--ink:#F2F4FF;--muted:#A9B2E6;--card:#171E48;--blue:#6D84FF;--line:#2C3670}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+main{max-width:720px;margin:0 auto;padding:0 20px 40px}
+.hero{padding:44px 0 32px}
+.brand{font-weight:900;font-size:clamp(3rem,16vw,5.5rem);line-height:.9;letter-spacing:-.03em;margin:0}
+.brand span{display:block;color:var(--blue)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:30ch;margin:18px 0 24px}
+.btn{display:inline-block;background:var(--sun);color:#10163A;font-weight:800;text-decoration:none;padding:14px 22px;border-radius:999px;font-size:1rem}
+.btn:focus-visible,.buy:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+h2{font-size:1.6rem;font-weight:800;margin:40px 0 16px;letter-spacing:-.01em}
+.grid{display:grid;gap:14px}
+@media (min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.pic{height:120px;display:flex;align-items:center;justify-content:center;font-size:3.4rem}
+.p1{background:var(--blue)}.p2{background:var(--sun)}.p3{background:#12A37F}.p4{background:#E8486B}
+.body{padding:14px 16px 16px}
+.body h3{margin:0;font-size:1.1rem;font-weight:800}
+.price{font-weight:800;color:var(--blue);margin:2px 0 6px}
+.sizes{font-size:.9rem;color:var(--muted);margin:0 0 12px}
+.buy{display:block;text-align:center;text-decoration:none;font-weight:800;color:var(--ink);border:2px solid var(--ink);padding:10px;border-radius:10px}
+.steps{padding-left:0;list-style:none;counter-reset:s;display:grid;gap:10px;margin:0}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 54px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:800;display:grid;place-items:center}
+.note{color:var(--muted);font-size:.95rem}
+footer{border-top:1px solid var(--line);padding-top:20px;margin-top:40px;color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){.btn,.buy{transition:transform .15s}.btn:active,.buy:active{transform:scale(.97)}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1 class="brand"><span>Sneakers</span></h1>
+<p class="lead">Fresh sneakers for Kampala. Pick a pair and order on WhatsApp.</p>
+<a class="btn" href="https://wa.me/256700000000?text=Hi%2C%20I%20want%20to%20order%20sneakers">Order on WhatsApp</a>
+</section>
+
+<h2>Shop sneakers</h2>
+<div class="grid">
+<article class="item"><div class="pic p1" aria-hidden="true">👟</div><div class="body"><h3>Court Classic</h3><p class="price">UGX 85,000</p><p class="sizes">Sizes 38 to 45</p><a class="buy" href="https://wa.me/256700000000?text=Hi%2C%20I%20want%20the%20Court%20Classic">Order this pair</a></div></article>
+<article class="item"><div class="pic p2" aria-hidden="true">👟</div><div class="body"><h3>Street Runner</h3><p class="price">UGX 95,000</p><p class="sizes">Sizes 38 to 46</p><a class="buy" href="https://wa.me/256700000000?text=Hi%2C%20I%20want%20the%20Street%20Runner">Order this pair</a></div></article>
+<article class="item"><div class="pic p3" aria-hidden="true">👟</div><div class="body"><h3>Kampala Trail</h3><p class="price">UGX 110,000</p><p class="sizes">Sizes 39 to 45</p><a class="buy" href="https://wa.me/256700000000?text=Hi%2C%20I%20want%20the%20Kampala%20Trail">Order this pair</a></div></article>
+<article class="item"><div class="pic p4" aria-hidden="true">👟</div><div class="body"><h3>Night Shift</h3><p class="price">UGX 120,000</p><p class="sizes">Sizes 38 to 44</p><a class="buy" href="https://wa.me/256700000000?text=Hi%2C%20I%20want%20the%20Night%20Shift">Order this pair</a></div></article>
+</div>
+
+<h2>How to order</h2>
+<ol class="steps">
+<li>Tap Order this pair on the sneaker you like.</li>
+<li>Send your size and where you are in Kampala on WhatsApp.</li>
+<li>We confirm the price and delivery, then you pay on delivery or by mobile money.</li>
+</ol>
+
+<footer>
+<p>Sneakers, Kampala, Uganda. Chat with us on WhatsApp for sizes, colours and delivery.</p>
+<p class="note">Sample page. Products and prices are examples.</p>
+</footer>
+</main>
+</body>
+</html>
